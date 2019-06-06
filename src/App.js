@@ -1,10 +1,6 @@
-import React, { Component } from 'react'
-import Data from './components/data'
+import React from 'react'
+import ComicList from './components/ComicList'
 
-class App extends Component {
-  render() {
-    return <Data />
-  }
-}
-
-export default App
+export default function App() {
+  return <ComicList />
+} 
