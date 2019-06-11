@@ -1,4 +1,4 @@
-#the calvin and hobbes encyclopedia
+# the calvin and hobbes encyclopedia
 View [Here](https://calvin-and-hobbes-encyclopedia-phil.netlify.com/)
 ![](calvandhobbes.gif)
 
