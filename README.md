@@ -2,7 +2,7 @@
 View [Here](https://calvin-and-hobbes-encyclopedia-phil.netlify.com/)
 ![](calvandhobbes.gif)
 
-* Almost every Calvin and Hobbes cartoon in one place. 
+Almost every Calvin and Hobbes Comic in one [place](https://calvin-and-hobbes-encyclopedia-phil.netlify.com/)  
 
 * Tumblr's [API](https://www.tumblr.com/docs/en/api/v2) pulls over 3,900 blog posts each containing 20 strips. 
 
@@ -10,4 +10,3 @@ View [Here](https://calvin-and-hobbes-encyclopedia-phil.netlify.com/)
 
 * Made with React and [Axios](https://github.com/axios/axios)
 
-*View [Here](https://calvin-and-hobbes-encyclopedia-phil.netlify.com/)
