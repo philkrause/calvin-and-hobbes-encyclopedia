@@ -8,5 +8,5 @@ Almost every Calvin and Hobbes Comic in one [place](https://calvin-and-hobbes-en
 
 * Each page is accessible through an animated carousel created with CSS
 
-* Made with React and [Axios](https://github.com/axios/axios)
+* Made with [React](https://reactjs.org/) and [Axios](https://github.com/axios/axios)
 
