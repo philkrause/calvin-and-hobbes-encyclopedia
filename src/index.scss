@@ -19,7 +19,7 @@ body {
 }
 
 .header-img {
-  height: 14rem;
+  height: 7rem;
   width: auto;
   padding-bottom: 0rem;
 }
@@ -67,6 +67,9 @@ $i: 0;
   transform: scale(0.7);
   transition: opacity 300ms linear,
     transform 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.comic img {
+  width: 360px;
 }
 
 .comic-container p {
@@ -198,6 +201,19 @@ $i: 0;
   }
 }
 @media only screen and (max-width: 635px) {
+  .container {
+    display: flex;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .container {
+    display: flex;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 370px) {
   .container {
     display: flex;
     padding-left: 0;

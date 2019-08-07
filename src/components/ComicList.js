@@ -27,7 +27,7 @@ export default function ComicList() {
   useEffect(() => fetchHobbes(offSet), [offSet])
 
   const nextSlide = () => {
-    setIndex(index + 600)
+    setIndex(index + 360)
     setNumber(number + 1)
     console.log('strip length', stripLength)
     console.log('number', number)
@@ -40,7 +40,7 @@ export default function ComicList() {
     if (number === 0) {
       e.disabled = true
     } else {
-      setIndex(index - 600)
+      setIndex(index - 360)
       setNumber(number - 1)
     }
   }
