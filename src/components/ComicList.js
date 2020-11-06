@@ -46,8 +46,8 @@ export default function ComicList() {
   }
   return (
     <>
+    <section className="container">
       <Header />
-      <section className="container">
         <section className={`strip-container active-slide-${number}`}>
           <div
             className="comic-container"
