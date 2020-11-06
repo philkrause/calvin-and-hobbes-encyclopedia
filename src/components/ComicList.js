@@ -46,8 +46,8 @@ export default function ComicList() {
   }
   return (
     <>
-    <section className="container">
       <Header />
+  
         <section className={`strip-container active-slide-${number}`}>
           <div
             className="comic-container"
@@ -60,7 +60,6 @@ export default function ComicList() {
             })}
           </div>
         </section>
-      </section>
 
       <div className="button-cont">
         <button className="prev-button" onClick={prevSlide}>
