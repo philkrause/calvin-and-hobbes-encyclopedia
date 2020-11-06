@@ -1,5 +1,5 @@
 # the calvin and hobbes encyclopedia
-View [Here](https://calvin-and-hobbes-encyclopedia-phil.netlify.com/)
+View [Here](https://calvinandhobbes.netlify.app)
 ![](calvandhobbes.gif)
 
 Almost every Calvin and Hobbes Comic in one [place](https://calvin-and-hobbes-encyclopedia-phil.netlify.com/)  
