@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import headerImg from '../images/header.png'
 
 export default function Headers() {
@@ -7,7 +7,6 @@ export default function Headers() {
     <>
       <div className='header-img-cont'>
         <img className='header-img' src={headerImg} />  <div className='button-cont'>
-
         </div>
       </div>
     </>
