@@ -1,4 +1,4 @@
-# the calvin and hobbes encyclopedia(https://calvinandhobbes.netlify.app)
+# [the calvin and hobbes encyclopedia](https://calvinandhobbes.netlify.app)
 Visting the SITE -----> [Here](https://calvinandhobbes.netlify.app)
 ![](calvandhobbes.gif)
 
