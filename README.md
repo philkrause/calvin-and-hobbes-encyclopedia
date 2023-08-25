@@ -1,8 +1,7 @@
-# the calvin and hobbes encyclopedia
-View [Here](https://calvinandhobbes.netlify.app)
+# the calvin and hobbes encyclopedia(https://calvinandhobbes.netlify.app)
+Visting the SITE -----> [Here](https://calvinandhobbes.netlify.app)
 ![](calvandhobbes.gif)
 
-Almost every Calvin and Hobbes Comic in one [place](https://calvin-and-hobbes-encyclopedia-phil.netlify.com/)  
 
 * Tumblr's [API](https://www.tumblr.com/docs/en/api/v2) pulls over 3,900 blog posts each containing 20 strips. 
 

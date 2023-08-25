@@ -103,6 +103,12 @@ $i: 0;
   font-size: 3rem;
   z-index: 1;
 }
+@media only screen and (max-width: 2700px) {
+  .container {
+    display: flex;
+    padding-left: 47%;
+  }
+}
 @media only screen and (max-width: 2600px) {
   .container {
     display: flex;
