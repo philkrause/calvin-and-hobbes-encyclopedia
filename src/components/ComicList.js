@@ -13,6 +13,11 @@ export default function ComicList() {
   const stripLength = posts.length - 1
 
   const random = () => Math.floor(Math.random() * 600)
+  
+  // Get slide width based on screen size
+  const getSlideWidth = () => {
+    return window.innerWidth <= 768 ? window.innerWidth : 600
+  }
 
   const fetchHobbes = useCallback(offSet => {
     fetch(
@@ -28,7 +33,8 @@ export default function ComicList() {
   useEffect(() => fetchHobbes(offSet), [offSet, fetchHobbes])
 
   const nextSlide = () => {
-    setIndex(index + 600)
+    const slideWidth = getSlideWidth()
+    setIndex(index + slideWidth)
     setNumber(number + 1)
     console.log('strip length', stripLength)
     console.log('number', number)
@@ -41,7 +47,8 @@ export default function ComicList() {
     if (number === 0) {
       e.disabled = true
     } else {
-      setIndex(index - 600)
+      const slideWidth = getSlideWidth()
+      setIndex(index - slideWidth)
       setNumber(number - 1)
     }
   }
