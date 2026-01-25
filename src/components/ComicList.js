@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import Header from './Header'
 import Comic from './Comic'
 
@@ -14,7 +14,7 @@ export default function ComicList() {
 
   const random = () => Math.floor(Math.random() * 600)
 
-  const fetchHobbes = offSet => {
+  const fetchHobbes = useCallback(offSet => {
     fetch(
       `https://api.tumblr.com/v2/blog/calvinandhobbes-daily.tumblr.com/posts/photo?type=photo&offset=${random()}&page_number=1&api_key=${apiKey}`,
       { method: 'GET' }
@@ -23,8 +23,9 @@ export default function ComicList() {
       .then(data => {
         setposts(prev => prev.concat(data.response.posts))
       })
-  }
-  useEffect(() => fetchHobbes(offSet), [offSet])
+  }, [apiKey])
+  
+  useEffect(() => fetchHobbes(offSet), [offSet, fetchHobbes])
 
   const nextSlide = () => {
     setIndex(index + 600)
