@@ -2,9 +2,9 @@
   "private": true,
   "name": "calvin-and-hobbes-encyclopedia",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "react-scripts build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "predeploy": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "deploy": "echo 'To setup deployment run: yarn setup-deploy'",
     "setup-deploy": "app-app --deploy && yarn deploy",
     "test": "react-scripts test",
