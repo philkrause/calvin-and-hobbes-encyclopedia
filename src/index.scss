@@ -96,7 +96,18 @@ $i: 0;
 .button-cont {
   display: flex;
   justify-content: space-between;
-  margin-top: -4rem;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+  padding: 0 2rem;
+  z-index: 10;
+}
+
+.button-cont button {
+  pointer-events: all;
 }
 
 .prev-button {
