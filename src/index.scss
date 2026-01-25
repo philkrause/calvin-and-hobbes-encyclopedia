@@ -26,10 +26,16 @@ body {
 
 .container {
   display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
 }
 
 .strip-container {
   position: relative;
+  width: 600px;
+  max-width: 100%;
+  overflow: hidden;
 }
 // .strip-container:after{
 //   content:'';
@@ -61,12 +67,22 @@ $i: 0;
   height: 20rem;
 }
 .comic {
-  flex: 1;
-  min-width: 65 0px;
+  flex: 0 0 600px;
+  min-width: 600px;
   opacity: 0.5;
   transform: scale(0.7);
   transition: opacity 300ms linear,
     transform 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.comic img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .comic-container p {
@@ -103,187 +119,25 @@ $i: 0;
   font-size: 3rem;
   z-index: 1;
 }
-@media only screen and (max-width: 2700px) {
-  .container {
-    display: flex;
-    padding-left: 47%;
-  }
-}
-@media only screen and (max-width: 2600px) {
-  .container {
-    display: flex;
-    padding-left: 46%;
-  }
-}
-@media only screen and (max-width: 2500px) {
-  .container {
-    display: flex;
-    padding-left: 45.5%;
-  }
-}
-@media only screen and (max-width: 2400px) {
-  .container {
-    display: flex;
-    padding-left: 45%;
-  }
-}
-@media only screen and (max-width: 2300px) {
-  .container {
-    display: flex;
-    padding-left: 44.5%;
-  }
-}
-@media only screen and (max-width: 2200px) {
-  .container {
-    display: flex;
-    padding-left: 43.5%;
-  }
-}
-@media only screen and (max-width: 2100px) {
-  .container {
-    display: flex;
-    padding-left: 43%;
-  }
-}
-@media only screen and (max-width: 2000px) {
-  .container {
-    display: flex;
-    padding-left: 42.5%;
-  }
-}
-@media only screen and (max-width: 1900px) {
-  .container {
-    display: flex;
-    padding-left: 42%;
-  }
-}
-@media only screen and (max-width: 1800px) {
-  .container {
-    display: flex;
-    padding-left: 41%;
-  }
-}
-@media only screen and (max-width: 1750px) {
-  .container {
-    display: flex;
-    padding-left: 40%;
-  }
-}
-@media only screen and (max-width: 1700px) {
-  .container {
-    display: flex;
-    padding-left: 39%;
-  }
-}
-@media only screen and (max-width: 1650px) {
-  .container {
-    display: flex;
-    padding-left: 38%;
-  }
-}
-@media only screen and (max-width: 1600px) {
-  .container {
-    display: flex;
-    padding-left: 36%;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  .container {
-    display: flex;
-    padding-left: 34%;
-  }
-}
 
-@media only screen and (max-width: 1400px) {
-  .container {
-    display: flex;
-    padding-left: 32%;
+// Responsive adjustments for smaller screens
+@media only screen and (max-width: 768px) {
+  .button-cont {
+    margin-top: -3rem;
   }
-}
-
-@media only screen and (max-width: 1300px) {
-  .container {
-    display: flex;
-    padding-left: 25%;
+  
+  .prev-button,
+  .next-button {
+    width: 8rem;
+    height: 8rem;
+    font-size: 2rem;
   }
-}
-@media only screen and (max-width: 1250px) {
-  .container {
-    display: flex;
-    padding-left: 25%;
+  
+  .comic-container {
+    height: 15rem;
   }
-}
-
-@media only screen and (max-width: 1200px) {
-  .container {
-    display: flex;
-    padding-left: 24%;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .container {
-    display: flex;
-    padding-left: 22%;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .container {
-    display: flex;
-    padding-left: 20%;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .container {
-    display: flex;
-    padding-left: 17%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .container {
-    display: flex;
-    padding-left: 16%;
-  }
-}
-@media only screen and (max-width: 850px) {
-  .container {
-    display: flex;
-    padding-left: 14%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .container {
-    display: flex;
-    padding-left: 11%;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .container {
-    display: flex;
-    padding-left: 9%;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .container {
-    display: flex;
-    padding-left: 7%;
-  }
-}
-@media only screen and (max-width: 675px) {
-  .container {
-    display: flex;
-    padding-left: 4%;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .container {
-    display: flex;
-    padding-left: 2.45%;
-  }
-}
-@media only screen and (max-width: 635px) {
-  .container {
-    display: flex;
-    padding-left: 0;
+  
+  .header-img {
+    height: 10rem;
   }
 }
