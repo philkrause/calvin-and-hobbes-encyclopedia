@@ -3,7 +3,7 @@ import Header from './Header'
 import Comic from './Comic'
 
 export default function ComicList() {
-  const apiKey = 'kPGEGIWaBYEBsdoL9dPH9C6dNI62IrI8V3zPIv3Qcdov5zxIMP'
+  const apiKey = process.env.REACT_APP_TUMBLR_API_KEY || 'kPGEGIWaBYEBsdoL9dPH9C6dNI62IrI8V3zPIv3Qcdov5zxIMP'
 
   const [posts, setposts] = useState([])
   const [offSet, setoffSet] = useState(0)
